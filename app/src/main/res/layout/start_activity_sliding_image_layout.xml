@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="1dp" >
+
+    <ImageView
+        android:id="@+id/startActivitySlidingImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startActivitySlidingTitleTextView"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:text="@string/start_title_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startActivitySlidingTextView"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_below="@id/startActivitySlidingTitleTextView"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/start_text_1" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

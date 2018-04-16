@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="136dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/cartItemImageView"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:text="Chicken Tikka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/cartItemImageView"
+        android:textSize="20sp"
+        android:textColor="#1d1b1b"
+        android:id="@+id/cartItemTitle" />
+
+    <TextView
+        android:text="$10.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/cartItemTitle"
+        android:layout_below="@id/cartItemTitle"
+        android:textSize="20sp"
+        android:textColor="#FF4081"
+        android:id="@+id/cartItemPrice" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/increaseNumberofItem"
+        android:text="+"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/increaseNumberofItem"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/numberOfItem" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/decreaseNumberofItem"
+        android:layout_toLeftOf="@id/numberOfItem"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"
+        android:text="-"
+        android:textSize="22sp"/>
+</RelativeLayout>
